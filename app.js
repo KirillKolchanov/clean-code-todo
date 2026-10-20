@@ -94,8 +94,6 @@ const toggleTaskCompletion = function () {
   targetList.appendChild(listItem);
 };
 
-addButton.onclick = addTask;
-
 const bindTaskEvents = function (taskListItem) {
   const checkBox = taskListItem.querySelector('input[type=checkbox]');
   const editButton = taskListItem.querySelector('button.edit');
@@ -105,6 +103,8 @@ const bindTaskEvents = function (taskListItem) {
   deleteButton.onclick = deleteTask;
   checkBox.onchange = toggleTaskCompletion;
 };
+
+addButton.onclick = addTask;
 
 for (const taskListItem of [...todoList.children, ...completedList.children]) {
   bindTaskEvents(taskListItem);
