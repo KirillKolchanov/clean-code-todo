@@ -1,0 +1,24 @@
+{
+  "name": "clean-code-todo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TODO app refactored for the RS School Clean Code task",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirillKolchanov/clean-code-todo.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
